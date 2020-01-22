@@ -1,0 +1,34 @@
+<ons-page id="home">
+	<script>
+		const openMenu = () => {
+		document.querySelector('#menu').open();
+		};
+	</script>
+
+	<!-- toolbar -->
+
+	<ons-toolbar id="home-toolbar">
+		<div class="center">Feeds</div>
+
+		<div class="left">
+			<ons-toolbar-button>
+					<img style="width:1.8em; position:relative; top:.4em" src="img/ico/grafitti.IO Logo Art.ico">
+			</ons-toolbar-button>
+		</div>
+
+		<div class="right">
+			<ons-toolbar-button onclick="openMenu()">
+				<ons-icon icon="md-menu"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+	</ons-toolbar>
+
+	<!-- body codes -->
+
+	<ons-tabbar tab-border id="tabbar">
+		<ons-tab page="feeds/general.html" label="general" active></ons-tab>
+		<ons-tab page="feeds/caucus.html" label="caucus"></ons-tab>
+		<ons-tab page="feeds/congress.html" label="congress"></ons-tab>
+		<ons-tab page="feeds/chapter.html" label="chapter"></ons-tab>
+	</ons-tabbar>
+</ons-page>

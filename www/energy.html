@@ -1,0 +1,299 @@
+
+
+<ons-page id="energy">
+
+  <!-- the toolbar -->
+
+  <ons-toolbar id="energy-toolbar">
+		<div class="center">Energy</div>
+
+    <!-- the toolbar -->
+
+		<div class="left">
+			<ons-toolbar-button>
+					<img style="width:1.8em; position:relative; top:.4em" src="img/ico/grafitti.IO Logo Art.ico">
+			</ons-toolbar-button>
+		</div>
+
+		<div class="right">
+			<ons-toolbar-button onclick="openMenu()">
+				<ons-icon icon="md-menu"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+
+	</ons-toolbar>
+
+  <!-- list of stuffs -->
+
+  <ons-list style="margin-bottom: 5px">
+    <ons-list-item>
+      <!-- the page content -->
+
+      <ons-row>
+        <div id="profile-card">
+          <style>
+              #profile-card{
+                /*position:relative;
+                top:0em;
+                left:0em;*/
+                display:block;
+                width:100%;
+                height:3.9em;
+                background-color:#fff
+              }
+              #energy-profile-image{
+                width:4em;
+                height:auto;
+                position:relative;
+                left:0em;
+                top:0em;
+              }
+              #profile-name{
+                position:relative;
+                left:3em;
+                top:-2.8em;
+                font-size:150%;
+                color:grey
+              }
+              #profile-id{
+                position:relative;
+                left:3.6em;
+                top:-3em;
+                font-size:120%;
+                color:grey
+              }
+              .spirit_energy, .spirit_conscience, .spirit_religion{
+                color:grey
+              }
+              .spirit_conscience span{
+                margin-left:.5em
+              }
+              .spirit_religion{
+                margin-left:1.3em;
+                color:#1e88e5
+              }
+              .spirit_religion a{
+                text-decoration:none;
+                color:#1e88e5
+              }
+              .spirit_religion h3{
+                font-size:95%
+              }
+          </style>
+
+          <img src="img/njaaba_prince.jpg" id="energy-profile-image">
+          <div id="profile-name">The Njaaba Prince</div>
+          <div id="profile-id">@ukebuochigozie</div>
+
+        </div>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+  <!-- ratings -->
+
+  <ons-list>
+    <ons-list-item>
+      <ons-row>
+
+        <ons-col class="info-col">
+          <div class="info-num">87K</div>
+          <div class="info-unit">
+            <ons-icon icon="fa-heart"></ons-icon>
+            Likes
+          </div>
+        </ons-col>
+
+        <ons-col class="info-col">
+          <div class="info-num">40</div>
+          <div class="info-unit">
+            <ons-icon icon="fa-user"></ons-icon>
+            Following
+          </div>
+        </ons-col>
+
+        <ons-col class="info-col">
+          <div class="info-num">3M</div>
+          <div class="info-unit">
+            <ons-icon icon="fa-group"></ons-icon>
+            Followers
+          </div>
+        </ons-col>
+
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+  <!-- spirit energy goes here -->
+
+  <ons-list style="margin-top: 5px">
+    <ons-list-item>
+      <ons-row>
+        <h2 class="spirit_energy">Spirit Energy</h2>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-user"></ons-icon>
+        <span>RELIGIOUS CONSCIENCE</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Chrisitan</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-key"></ons-icon>
+        <span>CONNECTION SPIRIT</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Jesus Christ</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-key"></ons-icon>
+        <span>DAILY DEVOTION</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>
+          <a href="#">@ukebuochigozie_attitude.mp3</a>
+        </h3>
+      </ons-row>
+    </ons-list-item>
+  </ons-list>
+
+  <!-- political covenant goes here -->
+
+  <ons-list style="margin-top: 5px">
+
+    <ons-list-item>
+      <ons-row>
+        <h2 class="spirit_energy">Political Covenant</h2>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-map-marker"></ons-icon>
+        <span>ORU-EAST</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Awo-mma-mma</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-group"></ons-icon>
+        <span>CONGRESS</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Ohana Eze Ndigbo</h3>
+      </ons-row>
+    </ons-list-item>
+
+  </ons-list>
+
+    <!-- personal information goes here -->
+
+  <ons-list style="margin-top: 5px">
+
+    <ons-list-item>
+      <ons-row>
+        <h2 class="spirit_energy">Personal information</h2>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-graduation-cap"></ons-icon>
+        <span>TRAINING</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Electrical Electronics Engineering</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-clock"></ons-icon>
+        <span>GENERATION</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Generation X</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-birthday-cake"></ons-icon>
+        <span>BIRTH PLACE</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Ike-Nna</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-sun"></ons-icon>
+        <span>BLOSSOM</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Night Owl</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-star"></ons-icon>
+        <span>HOROSCOPE</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Leo</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-map-marker"></ons-icon>
+        <span>NATIVE ADDRESS</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Km 52 Orlu Road, Awo-mma-mma</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-map-marker"></ons-icon>
+        <span>MAIDEN ADDRESS</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Km 52 Owerri Onitsha Expressway</h3>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item>
+      <ons-row class="spirit_conscience">
+        <ons-icon icon="fa-map-marker"></ons-icon>
+        <span>RESIDENCE ADDRESS</span>
+      </ons-row>
+      <ons-row class="spirit_religion">
+        <h3>Plot 3571 First Avenue Festac Town, Lagos</h3>
+      </ons-row>
+    </ons-list-item>
+
+  </ons-list>
+
+  <!-- the floating button -->
+
+  <ons-fab position="bottom right">
+    <ons-icon icon="fa-pen"></ons-icon>
+  </ons-fab>
+
+</ons-page>

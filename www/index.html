@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+			<meta name="HandheldFriendly" content="True" />
+			<meta name="MobileOptimized" content="320" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+			<meta name="author" content="electroSOFT NIGERIA" />
+			<meta name="owner" content="grafitti.IO" /><!--what is organisation for which you are developing this site-->
+			<meta name="subject" content="Brand Marketing" /><!--what is the main subject covered in this site-->
+			<meta name="description" content="grafitti.IO is the marketing platform created by electroSOFT NIGERIA to handle the marketing activities of its engineering business. Due to the community based structure of the engineering company, it became important to extend it to a social community based user demographic." /><!--describe the content of this site in 150 words or less-->
+			<meta name="theme-color" content="mint" /><!--what is the client color scheme-->
+
+			<meta name="language" content="EN" />
+			<meta name="copyright" content="grafitti.IO" /><!--company name-->
+
+			<meta name="url" content="https://www.grafitti.io" /><!--primary company URL-->
+			<meta name="coverage" content="worldwide" /><!--how far should this site propagate-->
+			<meta name="keywords" content="Digital Marketing, Offline Marketing, Content Development, Marketing Gigs, Brand Development, Word of Mouth Campaigns, Aso-Ebi Designs, Fliers Design and Development, Billboards Campaings, Television Adverts, Radio Gingles and Adverts, Social Media Development" /><!--insert keywords here-->
+			<meta name="revised" content="31/01/2019" /><!--when last was the site updated-->
+
+			<!--choose whether web bots crawl this page or not-->
+
+			<meta name="robots" content="index,follow" /><!--Let the spider crawl the entire website, usually-->
+
+			<!-- stop cacheing the page -->
+
+			<meta http-equiv="Cache-control" content="no-cache" />
+			<meta http-equiv="Expires" content="-1" />
+
+			<!-- basic unpkg styles -->
+
+			<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+			<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+
+			<!-- basic unpkg script -->
+
+			<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+			<!-- font-awesome CDN -->
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+			<!-- extra styles -->
+
+			<link rel="stylesheet" href="styles/profile.css">
+			<link rel="stylesheet" href="styles/sliding_menu.css">
+			<link rel="stylesheet" href="styles/details.css">
+      <link rel="stylesheet" href="styles/list_thumbnails.css">
+      <link rel="stylesheet" href="styles/list_avatars.css">
+
+			<title>grafitti.IO : : The marketing platform for marketing people, their brands and their passion</title>
+			<link rel="icon" href="img/ico/grafitti.IO Logo Art.ico" />
+
+			<script>
+				const loadPage = (page) => {
+  					document.querySelector('#menu').close();
+  					document.querySelector('#navigator').bringPageTop(page, { animation: 'slide' });
+				};
+			</script>
+		</head>
+		<body>
+			<ons-splitter>
+
+				<!-- The side menu -->
+
+				<ons-splitter-side id="menu" collapse width="260px">
+					<ons-page modifier="menu-page">
+						<ons-list class="menu-list">
+							<ons-list-item>
+	              <style>
+
+		              /* give them left-margin*/
+
+		              #side-bar-content{
+		                /*margin-left:1em;*/
+		                margin-top:.5em;
+		              }
+
+		              /* give the @ a grey color*/
+
+		              .profile-name{
+		                color:#fff;
+		                font-size:120%;
+		              }
+									.profile-id{
+		                color:grey;
+		                font-size:105%;
+		              }
+		              .profile-image{
+		                width:3em;
+										height:auto;
+		              }
+									.menu-words{
+										position:absolute;
+										left:3.5em
+									}
+	              </style>
+								<div id="side-bar-content">
+	              	<img  class="profile-image" alt="The Njaaba Prince" src="img/njaaba_prince.jpg">
+	              	<div class="profile-name">The Njaaba Prince</div>
+	              	<div class="profile-id">@ukebuochigozie</div>
+								</div>
+							</ons-list-item>
+
+		          <ons-list-item class="menu-item" onclick="loadPage('home.html')" tappable>
+								<ons-icon icon="fa-address-card"></ons-icon>
+		            <span class="menu-words">feeds</span>
+		          </ons-list-item>
+
+		          <ons-list-item class="menu-item" onclick="loadPage('energy.html')" tappable>
+		            <ons-icon icon="fa-user"></ons-icon>
+		            <span class="menu-words">energy</span>
+		          </ons-list-item>
+
+		          <ons-list-item class="menu-item" onclick="loadPage('community.html')" tappable>
+		            <ons-icon icon="fa-group"></ons-icon>
+		            <span class="menu-words">communities</span>
+		          </ons-list-item>
+<!--
+							<ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+								<ons-icon icon="fa-briefcase"></ons-icon>
+		            <span class="menu-words">enterprises</span>
+		          </ons-list-item>
+-->
+							<ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+		            <ons-icon icon="fa-money"></ons-icon>
+		            <span class="menu-words">bouquet</span>
+		          </ons-list-item>
+
+							<ons-list-item class="menu-item" onclick="loadPage('viji.html')" tappable>
+								<ons-icon icon="fa-viacoin"></ons-icon>
+								<span class="menu-words">viji</span>
+							</ons-list-item>
+<!--
+		          <ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+								<ons-icon icon="fa-graduation-cap"></ons-icon>
+		            <span class="menu-words">learn grafitti.IO</span>
+		          </ons-list-item>
+-->
+							<ons-list-item class="menu-item" onclick="loadPage('about.html')" tappable>
+								<ons-icon icon="fa-info"></ons-icon>
+		            <span class="menu-words">about grafitti.IO</span>
+		          </ons-list-item>
+<!--
+							<ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+		            <ons-icon icon="fa-envelope"></ons-icon>
+		            <span class="menu-words">messages</span>
+		          </ons-list-item>
+
+							<ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+								<ons-icon icon="fa-key"></ons-icon>
+								<span class="menu-words">reset key</span>
+							</ons-list-item>
+
+		          <ons-list-item class="menu-item" onclick="loadPage('#')" tappable>
+								<ons-icon icon="fa-power-off"></ons-icon>
+		            <span class="menu-words">logout</span>
+		          </ons-list-item>
+-->
+		        </ons-list>
+					</ons-page>
+				</ons-splitter-side>
+
+				<!-- Everything not in the side menu -->
+
+				<ons-splitter-content>
+					<ons-navigator id="navigator" page="login.html"></ons-navigator>
+				</ons-splitter-content>
+			</ons-splitter>
+		</body>
+	</html>
